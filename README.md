@@ -15,7 +15,7 @@ This section will help you create the files you need and install the packages yo
 
 ## Color Palette & Font
 
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/style_guide.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/style_guide.png" />
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
@@ -68,7 +68,7 @@ Congratulations! If you finished all the setup, you've already completed some de
 
 # Part 1
 
-<b>Live example [here](https://cl.ly/3p0v0k2L2m43). Filled out planning sheet [here](https://github.com/bethtelford/houser-redo/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://cl.ly/3p0v0k2L2m43). Filled out planning sheet [here](https://github.com/DevMountain/simulation-2/blob/master/PLANNING_SHEET.md)</b>
 
 In the first part you will set up routing, the abiltiy to view the houses, add a new house, and delete a house from the list. 
 
@@ -89,9 +89,9 @@ Funcitonality of the Dashboard View:
 
 ## Design
 Dashboard
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt1_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt1_dashboard.png" />
 Wizard
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt1_wizard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt1_wizard.png" />
 
 ## Step 1
 You are going to begin by setting up the routing.
@@ -228,13 +228,13 @@ Funcitonality of the Dashboard View:
 
 ## Design
 Dashboard
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt2_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_dashboard.png" />
 Wizard - Step One
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt2_step1.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step1.png" />
 Wizard - Step Two
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt2_step2.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step2.png" />
 Wizard - Step Three
-<img src="https://github.com/bethtelford/houser-redo/blob/master/assets/pt2_step3.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step3.png" />
  
 ## Step 1
 In this step you will prepare your application to work with Redux.
