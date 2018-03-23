@@ -17,6 +17,7 @@ export default class Dashboard extends Component {
                 }
             ],
         }
+    this.deleteHouse = this.deleteHouse.bind(this);
     }
     
     componentDidMount (){
@@ -29,12 +30,25 @@ export default class Dashboard extends Component {
             }
         )
     }
+    deleteHouse(hid){
+        const id = hid;
+        console.log(id)
+        axios.delete(`http://localhost:4000/api/deletehouse/${id}`)
+        .then( (res) =>
+            {console.log(res);
+                this.getHouse()}
+         )
+    }
+
     render (){
         const {houses} = this.state;
         console.log(houses);
         const houseList = houses.map( ( house, i ) => {
             console.log(house);
-            return( <House key = {i} house = {house}/>)
+            return( <House 
+                key = {i} 
+                house = {house}
+                deleteHouseFn = {this.deleteHouse}/>)
         })
         console.log(houses);
         return (
