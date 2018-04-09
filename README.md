@@ -4,10 +4,58 @@
 
 This project is designed to give you an opportunity to build something from scratch and to teach you how to connect all the pieces of an application together. All of the instructions give you an idea of what order to do things in, but there won't be any guidance or solutions on how to write the code itself. The styling of the project is not included in the instructions at all and should be completed at your discretion. 
 
-This project is broken into three parts. The setup instructions are more detailed and are designed to get you started. The parts have varying levels of detail, with the newer concepts explained more. This gives you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
+This project is broken into two parts. The setup instructions are more detailed and are designed to get you started. The parts have varying levels of detail, with the newer concepts explained more. This gives you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
 
 Good luck and work hard!
 
+## Competencies
+Competencies covered by this project
+
+### Setup
+["Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)"](https://github.com/DevMountain/simulation-2#database) </br>
+["Student can use class based components in react and it's features (render, JSX, nested components)"](https://github.com/DevMountain/simulation-2#react) </br>
+["Student can apply ES6 constructs in React for better code (import, export, destructuring)"](https://github.com/DevMountain/simulation-2#react) </br>
+["Student can create Node servers using the Express package (Server running)"](https://github.com/DevMountain/simulation-2#server) </br>
+["Student can create tables in a database"](https://github.com/DevMountain/simulation-2#database) </br>
+["Student can connect to their database in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-2#database) </br>
+
+### Part 1
+<strong>Step 1</strong> </br>
+["Student can add ReactRouter to their code base (HashRouter)"](https://github.com/DevMountain/simulation-2#step-1) </br>
+["Student can add ReactRouter to their code base (Switch, Route, component)"](https://github.com/DevMountain/simulation-2#step-1) </br>
+["Student can add ReactRouter to their code base (Link)"](https://github.com/DevMountain/simulation-2#step-1) </br>
+
+<strong>Step 2</strong> </br>
+["Student can use class based components in react and it's features (state, setState, constructors)"](https://github.com/DevMountain/simulation-2#step-2) </br>
+["Student can use class based components in react and it's features (events)"](https://github.com/DevMountain/simulation-2#step-2) </br>
+["Student can apply ES6 constructs in React for better code (arrow functions)"](https://github.com/DevMountain/simulation-2#step-2) </br>
+
+<strong>Step 3</strong> </br>
+["Student can use class based components in react and it's features (props)"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can create functional components that receive and render props"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can interact with the web via axios and REST"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can use componentDidMount in their code"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can create a RESTful API (Status codes)"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can create a RESTful API (GET endpoint)"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can create SQL statements to manipulate data in their databases (Select)"](https://github.com/DevMountain/simulation-2#step-3) </br>
+["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-2#step-3) </br>
+
+<strong>Step 4</strong> </br>
+["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-2#step-4)(https://github.com/DevMountain/simulation-2#step-4) </br>
+["Student can create a RESTful API (POST endpoint)"](https://github.com/DevMountain/simulation-2#step-4) </br>
+["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/DevMountain/simulation-2#step-4) </br>
+
+<strong>Step 5</strong> </br>
+["Student can use class based components in react and it's features (.bind)"](https://github.com/DevMountain/simulation-2#step-5) </br>
+["Student can create a RESTful API (params)"](https://github.com/DevMountain/simulation-2#step-5) </br>
+
+### Part 2
+<strong>Step 2</strong> </br>
+["Student can utilize Redux in their code to manage state (store, reducer)"(https://github.com/DevMountain/simulation-2#step-2-1) </br>
+["Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)"(https://github.com/DevMountain/simulation-2#step-2-1) </br>
+<strong>Step 3</strong> </br>
+["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"(https://github.com/DevMountain/simulation-2#step-3-1) </br>
+["Student can create Node servers using the Express package (Serving static files)"(https://github.com/DevMountain/simulation-2#step-3-1) </br>
 
 # Setup
 
@@ -26,7 +74,7 @@ This section will help you create the files you need and install the packages yo
 4) Inside your component folder create a folder for each component you will be using (Dashboard, House, Wizard, and Header)
 5) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
 6) Create a simple class component in the Dashboard and Wizard files. For now just return a div containing the component's name from the render method.
-7) Create a functional component (created with the function keyword) in the Header and Product files. For now just return a div containing the component's name.
+7) Create a functional component (created with the function keyword) in the Header and House files. For now just return a div containing the component's name.
 8) Now render the Dashboard, Wizard, and Header components in App.
 9) Render the House component inside Dashboard.
 10) Create a route.js file inside the src folder. We will use this for our routing later.
@@ -48,23 +96,13 @@ This section will help you create the files you need and install the packages yo
 2) Create an .env file at the root of the project.
 3) Open your .gitignore and add the .env file to it.
 4) Open server/index.js and require masssive and dotenv (make sure to invoke config on dotenv).
-5) Go to [Heroku](https://heroku.com) and create a database (you can also use a database you already have created, but just be careful not to name your table for Shelfie the same thing as any of the tables that already exist in your database)
+5) Go to [Heroku](https://heroku.com) and create a database (you can also use a database you already have created, but just be careful not to name your table for Houser the same thing as any of the tables that already exist in your database)
 6) Copy the connection URI for your new or existing database and save it in your .env file (make sure you put `?ssl=true` on the end of the string).
 7) Create a folder called db at the root of the project.
 8) Set up massive in your server using the connection string you saved in your .env file.
 9) Make sure to run `nodemon` again and make sure your database is connecting.
-10) Copy the connection string from your .env file into SQLTabs and create the products table.
+10) Copy the connection string from your .env file into SQLTabs and create the houses table.
 11) It's helpful to insert some dummy data into your database at this point to help you test as you go along. 
-
-## Competencies
-Congratulations! If you finished all the setup, you've already completed some demo competencies!
-
-"Student can use git to create, manage, and synchronize commits locally and remotely (Local and remote repository in-sync, .gitignore)" </br>
-"Student can use class based components in react and it's features (render, JSX, nested components)" </br>
-"Student can apply ES6 constructs in React for better code (import, export, destructuring)" </br>
-"Student can create Node servers using the Express package (Server running)" </br>
-"Student can create tables in a database" </br>
-"Student can connect to their database in their NodeJS servers using Massive" </br>
 
 # Part 1
 
@@ -89,9 +127,9 @@ Funcitonality of the Dashboard View:
 
 ## Design
 Dashboard
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt1_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt1_dashboard.png" />
 Wizard
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt1_wizard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt1_wizard.png" />
 
 ## Step 1
 You are going to begin by setting up the routing.
@@ -148,47 +186,15 @@ Next you will add the ability to add a new house.
 Then you will add the ability to delete a house.
 
 * Write DELETE endpoint in your server.
-   * The endpoint should should use a parameter to determine which product to remove from the database. 
+   * The endpoint should should use a parameter to determine which house to remove from the database. 
    * The endpoint should respond with the 'all good' status code once it has removed the house to the database.
 * Write a method in Dashboard that sends an axios request to the endpoint you just wrote.
-    * The method should accept a parameter to determine which product to remove from the database.
+    * The method should accept a parameter to determine which house to remove from the database.
     * Once the response comes back from the server, invoke the method you wrote to get all the houses from the database.
 * Pass the method from Dashboard to each House component through props. 
     * The method should fire when a user clicks any of the 'Delete' buttons.
-    * Remember to pass an argument into the method to identify which product should be deleted.
+    * Remember to pass an argument into the method to identify which house should be deleted.
    
-## Competencies
-You just covered a lot of competencies! Here is the breakdown:
-
-<strong>Step 1</strong> </br>
-"Student can add ReactRouter to their code base (HashRouter)" </br>
-"Student can add ReactRouter to their code base (Switch, Route, component)" </br>
-"Student can add ReactRouter to their code base (Link)" </br>
-
-<strong>Step 2</strong> </br>
-"Student can use class based components in react and it's features (state, setState, constructors)" </br>
-"Student can use class based components in react and it's features (events)" </br>
-"Student can apply ES6 constructs in React for better code (arrow functions)" </br>
-
-<strong>Step 3</strong> </br>
-"Student can use class based components in react and it's features (props)" </br>
-"Student can create functional components that receive and render props" </br>
-"Student can interact with the web via axios and REST" </br>
-"Student can use componentDidMount in their code" </br>
-"Student can create a RESTful API (Status codes)" </br>
-"Student can create a RESTful API (GET endpoint)" </br>
-"Student can create SQL statements to manipulate data in their databases (Select)" </br>
-"Student can run SQL commands in their NodeJS servers using Massive" </br>
-
-<strong>Step 4</strong> </br>
-"Student can create a RESTful API (body parser)" </br>
-"Student can create a RESTful API (POST endpoint)" </br>
-"Student can create SQL statements to manipulate data in their databases (Insert)" </br>
-
-<strong>Step 5</strong> </br>
-"Student can use class based components in react and it's features (.bind)" </br>
-"Student can create a RESTful API (params)" </br>
-
 # Part 2
 
 <b>Live example [here](https://cl.ly/3F0S2m1c261U)</b>
@@ -220,7 +226,7 @@ Functionality of the Wizard:
     * This should clear the inputs of the Wizard.
     * This should redirect the user to the Dashboard.
 
-Funcitonality of the Dashboard View:
+Functionality of the Dashboard View:
 * A user should be able to see all the houses that have been added to the database.
 * Each house should display its image, name, address, city, state, zipcode, montly mortgage, and desired rent information.
 * A user should be able to click the 'Add New Property' button to be taken to the Wizard view.
@@ -228,13 +234,13 @@ Funcitonality of the Dashboard View:
 
 ## Design
 Dashboard
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_dashboard.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt2_dashboard.png" />
 Wizard - Step One
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step1.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt2_step1.png" />
 Wizard - Step Two
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step2.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt2_step2.png" />
 Wizard - Step Three
-<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/pt2_step3.png" />
+<img src="https://github.com/DevMountain/simulation-2/blob/master/assets/views/pt2_step3.png" />
  
 ## Step 1
 In this step you will prepare your application to work with Redux.
@@ -364,13 +370,5 @@ Finally you will update the ability to add a new house to use all these new valu
 Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
 * Run `npm run build`
 * Use express.static to serve the build from your server.
-
-## Competencies
-You added four HUGE competencies! 
-
-"Student can utilize Redux in their code to manage state (store, reducer)" </br>
-"Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)" </br>
-"Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)" </br>
-"Student can create Node servers using the Express package (Serving static files)" </br>
 
 <b>Congratulations! You've completed 31 competencies and built your second full-stack application!</b>
