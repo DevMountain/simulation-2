@@ -51,11 +51,11 @@ Competencies covered by this project
 
 ### Part 2
 <strong>Step 2</strong> </br>
-["Student can utilize Redux in their code to manage state (store, reducer)"(https://github.com/DevMountain/simulation-2#step-2-1) </br>
-["Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)"(https://github.com/DevMountain/simulation-2#step-2-1) </br>
+["Student can utilize Redux in their code to manage state (store, reducer)"](https://github.com/DevMountain/simulation-2#step-2-1) </br>
+["Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)"](https://github.com/DevMountain/simulation-2#step-2-1) </br>
 <strong>Step 3</strong> </br>
-["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"(https://github.com/DevMountain/simulation-2#step-3-1) </br>
-["Student can create Node servers using the Express package (Serving static files)"(https://github.com/DevMountain/simulation-2#step-3-1) </br>
+["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"](https://github.com/DevMountain/simulation-2#step-3-1) </br>
+["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-2#step-3-1) </br>
 
 # Setup
 
