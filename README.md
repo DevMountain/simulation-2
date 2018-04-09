@@ -6,8 +6,6 @@ This project is designed to give you an opportunity to build something from scra
 
 This project is broken into two parts. The setup instructions are more detailed and are designed to get you started. The parts have varying levels of detail, with the newer concepts explained more. This gives you a chance to practice your skills on your own. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
 
-Good luck and work hard!
-
 ## Competencies
 Competencies covered by this project
 
@@ -56,6 +54,8 @@ Competencies covered by this project
 <strong>Step 3</strong> </br>
 ["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"](https://github.com/DevMountain/simulation-2#step-3-1) </br>
 ["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-2#final-step) </br>
+
+Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
 
 # Setup
 
