@@ -53,6 +53,7 @@ Competencies covered by this project
 ["Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)"](https://github.com/DevMountain/simulation-2#step-2-1) </br>
 <strong>Step 3</strong> </br>
 ["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"](https://github.com/DevMountain/simulation-2#step-3-1) </br>
+<strong>Final Step</strong> </br>
 ["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-2#final-step) </br>
 
 Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
@@ -106,7 +107,7 @@ This section will help you create the files you need and install the packages yo
 
 # Part 1
 
-<b>Live example [here](https://cl.ly/3p0v0k2L2m43). Filled out planning sheet [here](https://github.com/DevMountain/simulation-2/blob/master/PLANNING_SHEET.md)</b>
+<b>Live example [here](https://houser.devmountain.com/v2/part1/#/). Filled out planning sheet [here](https://github.com/DevMountain/simulation-2/blob/master/PLANNING_SHEET.md)</b>
 
 In the first part you will set up routing, the abiltiy to view the houses, add a new house, and delete a house from the list. 
 
@@ -197,7 +198,7 @@ Then you will add the ability to delete a house.
    
 # Part 2
 
-<b>Live example [here](https://cl.ly/3F0S2m1c261U)</b>
+<b>Live example [here](https://houser.devmountain.com/v2/part2/#/)</b>
 
 In this part we will expand our Wizard to have three steps instead of just one.
 
