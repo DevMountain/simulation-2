@@ -69,17 +69,19 @@ This section will help you create the files you need and install the packages yo
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
 ## React
-1) Run `create-react-app houser` and cd into the folder to get started.
-2) Run `npm i axios react-router-dom --save`.
-3) Create a component folder inside of src
-4) Inside your component folder create a folder for each component you will be using (Dashboard, House, Wizard, and Header)
-5) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
-6) Create a simple class component in the Dashboard and Wizard files. For now just return a div containing the component's name from the render method.
-7) Create a functional component (created with the function keyword) in the Header and House files. For now just return a div containing the component's name.
-8) Now render the Dashboard, Wizard, and Header components in App.
-9) Render the House component inside Dashboard.
-10) Create a route.js file inside the src folder. We will use this for our routing later.
-11) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
+1) You do ```not``` need to clone this repository.
+    - If you did clone this repository, run `create-react-app .` in the root directory of the clone.
+2) Otherwise, run `create-react-app houser` and cd into the folder to get started.
+3) Run `npm i axios react-router-dom --save`.
+4) Create a component folder inside of src
+5) Inside your component folder create a folder for each component you will be using (Dashboard, House, Wizard, and Header)
+6) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
+7) Create a simple class component in the Dashboard and Wizard files. For now just return a div containing the component's name from the render method.
+8) Create a functional component (created with the function keyword) in the Header and House files. For now just return a div containing the component's name.
+9) Now render the Dashboard, Wizard, and Header components in App.
+10) Render the House component inside Dashboard.
+11) Create a route.js file inside the src folder. We will use this for our routing later.
+12) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
 
 ## Server
 1) Run `npm i express body-parser --save`
