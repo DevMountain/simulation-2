@@ -39,28 +39,29 @@ Competencies covered by this project
 ["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-2#step-3) </br>
 
 <strong>Step 4</strong> </br>
-["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-2#step-4)(https://github.com/DevMountain/simulation-2#step-4) </br>
+["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 ["Student can create a RESTful API (POST endpoint)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 ["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 
 <strong>Step 5</strong> </br>
 ["Student can use class based components in react and it's features (.bind)"](https://github.com/DevMountain/simulation-2#step-5) </br>
 ["Student can create a RESTful API (params)"](https://github.com/DevMountain/simulation-2#step-5) </br>
+["Student can create a RESTful API (DELETE endpoint)"](https://github.com/DevMountain/simulation-2#step-5) </br>
 
 ### Part 2
+<strong>Step 1</strong> </br>
+["Student can alter existing tables in a database"](https://github.com/DevMountain/simulation-2#step-1-1) </br>
 <strong>Step 2</strong> </br>
 ["Student can utilize Redux in their code to manage state (store, reducer)"](https://github.com/DevMountain/simulation-2#step-2-1) </br>
 ["Student can utilize Redux in their code to manage state (connect, mapStateToProps, share state)"](https://github.com/DevMountain/simulation-2#step-2-1) </br>
 <strong>Step 3</strong> </br>
 ["Student can utilize Redux in their code to manage state (actions, action builders, mapDispatchToProps object)"](https://github.com/DevMountain/simulation-2#step-3-1) </br>
-<strong>Final Step</strong> </br>
-["Student can create Node servers using the Express package (Serving static files)"](https://github.com/DevMountain/simulation-2#final-step) </br>
 
 Don't worry too much about the competencies; they will be covered as you build this project. Good luck and work hard!
 
 # Setup
 
-This section will help you create the files you need and install the packages you need.
+This section will help you create the files and install the packages you need.
 
 ## Color Palette & Font
 
@@ -68,18 +69,30 @@ This section will help you create the files you need and install the packages yo
 
 <b>[Google Font - Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)</b>
 
+## Repository
+Do NOT clone this repository. You will be creating your own.
+1) Navigate in the terminal to the folder you would like to store your simulation in, and then run `create-react-app houser`. `cd` into the folder to get started.
+2) Run `git init` to create a local git repo. 
+3) Add and commit all of your files.
+4) Open up your Github profile page and click on 'Repositories'. 
+5) Click on the 'New' button. Name your repo (we suggest 'houser', the same name as your local folder). Do NOT initialize the repo with a README.
+6) Now go back to your terminal and run `git remote add origin [INSERT-GITHUB-URL-HERE]` with the url from the remote repo you just created.
+7) And finally, run `git push origin master -u` to push your local files to your remote repo for the first time. 
+
+Make sure to commit and push your code often. It's not fun to lose hours of work.
+
 ## React
-1) Run `create-react-app houser` and cd into the folder to get started.
-2) Run `npm i axios react-router-dom --save`.
-3) Create a component folder inside of src
-4) Inside your component folder create a folder for each component you will be using (Dashboard, House, Wizard, and Header)
-5) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
-6) Create a simple class component in the Dashboard and Wizard files. For now just return a div containing the component's name from the render method.
-7) Create a functional component (created with the function keyword) in the Header and House files. For now just return a div containing the component's name.
-8) Now render the Dashboard, Wizard, and Header components in App.
-9) Render the House component inside Dashboard.
-10) Create a route.js file inside the src folder. We will use this for our routing later.
-11) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
+You have already created a React application as part of setting up the Github repo, so now you will start adding packages and files to that project.
+1) Run `npm i axios react-router-dom --save`.
+2) Create a component folder inside of src
+3) Inside your component folder create a folder for each component you will be using (Dashboard, House, Wizard, and Header)
+4) Inside each of these folders create a Javascript file named the same thing. Make sure to capitalize the first letter!
+5) Create a simple class component in the Dashboard and Wizard files. For now just return a div containing the component's name from the render method.
+6) Create a functional component (created with the function keyword) in the Header and House files. For now just return a div containing the component's name.
+7) Now render the Dashboard, Wizard, and Header components in App.
+8) Render the House component inside Dashboard.
+9) Create a route.js file inside the src folder. We will use this for our routing later.
+10) Run `npm start` to make sure everything is working. You should see the names of all the components displayed.
 
 ## Server
 1) Run `npm i express body-parser --save`
@@ -367,9 +380,5 @@ Finally you will update the ability to add a new house to use all these new valu
    * The method should still navigate to the Dashboard once the house has been added.
 * Lastly update the House component to display the additional values for each House.
 
-## Final Step
-Once you have completed all the functionality of your application you are ready to set up your server to server the front end files
-* Run `npm run build`
-* Use express.static to serve the build from your server.
+<b>Congratulations! You've completed 30 competencies and built your second full-stack application!</b>
 
-<b>Congratulations! You've completed 31 competencies and built your second full-stack application!</b>
