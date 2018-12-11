@@ -72,7 +72,7 @@ This section will help you create the files and install the packages you need.
 ## Repository
 Do NOT clone this repository. You will be creating your own.
 1) Navigate in the terminal to the folder you would like to store your simulation in, and then run `create-react-app houser`. `cd` into the folder to get started.
-2) Run `git init` to create a local git repo. 
+2) `create-react-app` starts your new project out as a local git repository, so you don't have to set that up. You can start using git commands right away.
 3) Add and commit all of your files.
 4) Open up your Github profile page and click on 'Repositories'. 
 5) Click on the 'New' button. Name your repo (we suggest 'houser', the same name as your local folder). Do NOT initialize the repo with a README.
