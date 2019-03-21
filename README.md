@@ -213,8 +213,7 @@ In this step you will prepare your application to work with Redux.
 * First, run `npm i redux`
 * Use `SQLTabs` to connect to your database. Alter the houses table, adding colums for the image, monthly mortgage amount, and desired rent
   * _HINT:_ Save the SQL command for this to show your mentor later to earn some points.
-* Create a folder called `ducks` inside the `src` folder.
-* Inside `ducks`, create a file called `store.js`.
+* Create a file called `store.js` inside of `src`.
 * Now create three components, one for each step.
 * Your Wizard component has most of the functionality of Step One in it right now. Move state, the methods needed for the inputs to update state, and the input boxes from Wizard to Step One.
 * Leave the 'Cancel' button in Wizard.
@@ -232,13 +231,16 @@ In this step you will prepare your application to work with Redux.
 Now you will get the Redux store set up and talking to a component.
 
 * Open `store.js` and bring in `createStore` from `redux`. 
-* Open `store.js` and create an object called `initialState`. This object should store all the values entered in the wizard.
+* Create an object called `initialState`. This object should store all the values entered in the wizard.
 * Create a function named `reducer`. This function should take in two parameters: `state` (with the default value of `initialState`), and `action`.
 * Set up a `switch` statement inside the `reducer` based on the action type. For now just setup a default case that returns state.
 * Create and export a store using `createStore` and `reducer`.
 * Go back to Step One and import `store` from `src/ducks/store.js`.
    * Create a variable called `reduxState` in the `constructor`. Set it's value to `.getState` invoked.
    * Use values from `reduxState` to set initial state for the component.
+* Subscribe to the `store` inside of `componentDidMount`.
+  * Use the `.subscribe` method.
+  * Update local state using values from Redux state.
 
 ## Step 3
 
@@ -261,6 +263,9 @@ For both components:
 * Import `store` from `store.js`.
 * Create a variable called `reduxState` in the `constructor`. Set it's value to `.getState` invoked.
 * Use values from `reduxState` to set initial state for the component.
+* Subscribe to the `store` inside of `componentDidMount`.
+  * Use the `.subscribe` method.
+  * Update local state using values from Redux state.
 
 ## Step 5 
 
