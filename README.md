@@ -344,7 +344,7 @@ Competencies covered by this project
 ["Student can run SQL commands in their NodeJS servers using Massive"](https://github.com/DevMountain/simulation-2#step-3) </br>
 
 <strong>Step 4</strong> </br>
-["Student can create a RESTful API (body parser)"](https://github.com/DevMountain/simulation-2#step-4) </br>
+["Student can create a RESTful API (express.json)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 ["Student can create a RESTful API (POST endpoint)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 ["Student can create SQL statements to manipulate data in their databases (Insert)"](https://github.com/DevMountain/simulation-2#step-4) </br>
 
