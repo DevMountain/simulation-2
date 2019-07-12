@@ -275,7 +275,7 @@ For both components:
 * Open `store.js` and create and export an action type constant.
 * In your `reducer` function, add a `case` to the `switch` statement for each action type. 
   * The cases should return an object that includes all the values stored on state. The values added in other steps should remain what they were, and the values for the current step should be updated based on the values of the action payload.
-* Import the coorisponding action type into the component.
+* Import the corresponding action type into the component.
 * Now setup the buttons to update the `store` using the action type.
   * Use the `.dispatch` method. Pass in an object with a `type` and a `payload`.
   * The image URL should be saved to Redux when the 'Previous Step' or the 'Next Step' buttons are clicked in Step Two.
