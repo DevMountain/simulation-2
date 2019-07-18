@@ -306,7 +306,7 @@ Finally you will update the ability to add a new house to use all these new valu
    * The `axios` request should send all the values from all three steps on the body.
    * name, address, city, state, zipcode, and the image URL should be pulled from Redux, but the monthly mortgage amount and the desired rent should be pulled from local state.
    * This is because Redux is only updated when the navigation buttons are clicked, so on the final step the values stored in Redux may be out of date.
-   * The method should invoke the action builder that clears the Redux state once the house has been added. Remember to bring the action builder in at the top of the file and add it to your connect function at the bottom.
+   * The method should invoke the action builder that clears the Redux state once the house has been added. Remember to bring the action builder in at the top of the file.
    * The method should still navigate to the Dashboard once the house has been added.
 * Lastly update the House component to display the additional values for each House.
 
