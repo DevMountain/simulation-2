@@ -296,7 +296,7 @@ Now you will set up you cancel button to forget all values from the Wizard.
   * Use the `.dispatch` method. Pass in an object with the `type` you imported. This time you don't need a `payload`.
   * The button should still navigate correctly.
    
-## Step 8
+## Step 7
 
 Finally you will update the ability to add a new house to use all these new values
 
