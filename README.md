@@ -210,10 +210,11 @@ Wizard - Step Three
 ## Step 1
 In this step you will prepare your application to work with Redux.
 
-* First, run `npm i redux`
-* Use `SQLTabs` to connect to your database. Alter the houses table, adding colums for the image, monthly mortgage amount, and desired rent
+* First, run `npm i redux react-redux`
+* Use `SQLTabs` to connect to your database. Alter the houses table, adding columns for the image, monthly mortgage amount, and desired rent
   * _HINT:_ Save the SQL command for this to show your mentor later to earn some points.
-* Create a file called `store.js` inside of `src`.
+* Create a folder called ducks inside the src folder.
+* Inside ducks, create a file called store.js and a file called reducer.js
 * Now create three components, one for each step.
 * Your Wizard component has most of the functionality of Step One in it right now. Move state, the methods needed for the inputs to update state, and the input boxes from Wizard to Step One.
 * Leave the 'Cancel' button in Wizard.
@@ -230,71 +231,94 @@ In this step you will prepare your application to work with Redux.
 
 Now you will get the Redux store set up and talking to a component.
 
-* Open `store.js` and bring in `createStore` from `redux`. 
-* Create an object called `initialState`. This object should store all the values entered in the wizard.
-* Create a function named `reducer`. This function should take in two parameters: `state` (with the default value of `initialState`), and `action`.
+* Open `reducer.js` and create an object called `initialState`. This object should store all of teh values entered in the wizard.
+* Export by default a function named `reducer`. This function should take in two parameters: `state` (with the default value of `initialState`), and `action`.
 * Set up a `switch` statement inside the `reducer` based on the action type. For now just setup a default case that returns state.
-* Create and export a store using `createStore` and `reducer`.
-* Go back to Step One and import `store` from `src/ducks/store.js`.
-   * Create a variable called `reduxState` in the `constructor`. Set it's value to `.getState` invoked.
-   * Use values from `reduxState` to set initial state for the component.
-* Subscribe to the `store` inside of `componentDidMount`.
-  * Use the `.subscribe` method.
-  * Update local state using values from Redux state.
+* Now open `store.js` and bring in `createStore` from `redux` and the `reducer` from `reducer.js`. 
+   * Create and export a store using `createStore` and the `reducer` you just brought in.
+* Open `src/index.js` and bring in `Provider` from `react-redux` and the store from `store.js`.
+   * Wrap `HashRouter` with the `Provider`.
+   * Pass the store to the `Provider`.
+* Go back to Step One and bring in `connect` from `react-redux`.
+   * Write the `mapStateToProps` function at the bottom of the file.
+   * Take the name, addres, city, state, and zipcode off of the Redux state.
+   * Now invoke `connect`, passing in `mapStateToProps`. Immediately invoke it again passing in the name of the component.
+* Now if you console.log props inside your render method you should see the values coming from Redux state.
 
 ## Step 3
 
 Then you will setup your Step One component to update Redux state.
 
-* Open `store.js` and create and export an action type constant for Step One.
-* In your `reducer` function, add a `case` to the `switch` statement. 
-  * The `case` should match the action type you just wrote.
-  * This `case` should return an object that includes all the values stored on `state`. The values for img, monthly mortgage, and desired rent should remain what they were, and the values for name, address, city, state, and zipcode should be updated based on the values of the action payload.
-* In Step One, import the action type you created.
-* Now setup the 'Next Step' button to update the `store` using the action type.
-  * Use the `.dispatch` method. Pass in an object with a `type` and a `payload`.
-  * The button should still navigate to the next step.
+* In `reducer.js` write an action builder that takes in a parameter for each value entered in Step One.
+* The function should return an action object with two properties: a `type` and a `payload`.
+   * The type should be a string that describes what this action is supposed to do. These action type strings are usualy stored in a constant outside the function.
+   * The payload should be an object with a property for every parameter that was passed into the function.
+   * The function should be exported.
+* In your `reducer` function, add a case to the switch statement.
+   * The `case` should match the action type you just wrote.
+   * This `case` should return an object that includes all the values stored on `state`. The values for img, monthly mortgage, and desired rent should remain what they were, and the values for name, address, city, state, and zipcode should be updated based on the values of the action payload.
+* Bring the action builder you just wrote into Step One.
+* Add an object to the connect method at the bottom of the component. Add the action builder you just brought into Step One as a value to this object.
+* Now setup the 'Next Step' button to fire this action.
+   * The button should still navigate to the next step.
+
 
 ## Step 4
 
 Now that you have Step One connected to Redux, you will replicate the process for steps two and three.
 
 For both components:
-* Import `store` from `store.js`.
-* Create a variable called `reduxState` in the `constructor`. Set it's value to `.getState` invoked.
-* Use values from `reduxState` to set initial state for the component.
-* Subscribe to the `store` inside of `componentDidMount`.
-  * Use the `.subscribe` method.
-  * Update local state using values from Redux state.
+* Bring in `connect` from `react-redux`.
+* Write a `mapStateToProps` function at the bottom of the file.
+   * In Step Two, take the image off of the Redux state.
+   * In Step Three, take all the properties off of the Redux state (we'll need these to make our axios request).
+* Invoke connect, passing in `mapStateToProps`. Immediately invoke it again passing in the name of the component.
 
 ## Step 5 
 
 Then replicate the process of saving the values to Redux state for steps two and three.
 
-For both components:
-* Open `store.js` and create and export an action type constant.
-* In your `reducer` function, add a `case` to the `switch` statement for each action type. 
-  * The cases should return an object that includes all the values stored on state. The values added in other steps should remain what they were, and the values for the current step should be updated based on the values of the action payload.
-* Import the corresponding action type into the component.
-* Now setup the buttons to update the `store` using the action type.
-  * Use the `.dispatch` method. Pass in an object with a `type` and a `payload`.
-  * The image URL should be saved to Redux when the 'Previous Step' or the 'Next Step' buttons are clicked in Step Two.
-  * The monthly mortgage amount and the desired rent should be saved to Redux when the 'Previous Step' button is click in Step Three.
-  * The buttons should still navigate correctly.
+* In reducer.js write an action builder each for both components.
+   * The function should take in parameters for each value entered in the corresponding step.
+   * The function should return an action object with two properties: a type and a payload.
+   * The type should be a string that describes what this action is supposed to do.
+   * The payload should be an object with a property for every parameter that was passed into the function.
+   * The function should be exported.
+* In your reducer function, add a case each for both action builders to the switch statement.
+   * The cases should match the action types you just wrote.
+   * The cases should return an object that includes all the values stored on state. The values added in other steps should remain what they were, and the values for the current step should be updated based on the values of the action payload.
+* Bring the corresponding action builder into the components.
+* Add an object to the connect method at the bottom of the components. Add the action builders you just brought in as a value to this object.
+* Set up the action builders to fire when the navigation buttons are clicked.
+   * The action builder that saves the image URL should fire when the 'Previous Step' or the 'Next Step' buttons are clicked in Step Two.
+   * The action builder that saves the monthly mortgage amount and the desired rent should fire when the 'Previous Step' button is click in Step Three.
    
- 
 ## Step 6
+
+Next you'll make sure the saved values show up in each step if the user navigates between steps.
+
+* In each step, use a component lifecycle method to update state as soon as the component loads.
+   * Every step has been hooked up to Redux state, so take the values stored in Redux and set them on state.
+   * This should make the input boxes display the values previously entered.
+
+## Step 7
 
 Now you will set up you cancel button to forget all values from the Wizard.
 
-* Open `store.js` and create and export another action type constant.
-* In your `reducer` function, add a `case` for the action type to the `switch` statement. 
-  * The `case` should match the action type you just wrote.
-  * The `case` should return an object. It should have all the properties of state, and the values should match what they were in the `initialState` object. 
-* In Wizard, import the `store`.
-* Set up the 'Cancel' button to clear Redux State. 
-  * Use the `.dispatch` method. Pass in an object with the `type` you imported. This time you don't need a `payload`.
-  * The button should still navigate correctly.
+* In reducer.js write an action builder
+   * The function should return an action object with two properties: a type and a payload.
+   * The type should be a string that describes what this action is supposed to do.
+   * The payload should be equal to intialState.
+   * The function should be exported.
+* In your reducer function, add a case for the action builder to the switch statement.
+   * The case should match the action type you just wrote.
+   * The case should return the payload. In this case we DO want to forget all the values that were stored in state.
+* In Wizard, bring in connect from react-redux and the action builder you just wrote.
+   * Invoke connect, passing in null for the first argument. This is because you don't need to map any Redux state to your props in this component.
+   * Pass in an object for the second argument. This object should contain the action builder you brought in.
+   * Immediately invoke connect again passing in the name of the component.
+* Set up the 'Cancel' button to fire the action builder.
+   * The button should still navigate to the Dashboard view.
    
 ## Step 8
 
